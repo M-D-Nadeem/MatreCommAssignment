@@ -11,7 +11,7 @@ import useDebounce from "./hooks/useDebounce";
 
 import { useState, useEffect, useCallback } from "react";
 
-const API_BASE_URL = 'http://localhost:7002/api';
+const API_BASE_URL = import.meta.env.API_BASE_URL;
 
 const api = {
   async fetchBooks(params = {}) {
